@@ -7,12 +7,9 @@
  */
 int main(void)
 {
-    return (0);
-}
-
-{
 char myvar[]="\"Programming is like building a multilingual puzzle";
 
 puts(myvar);
 
 return(0);
+}
