@@ -9,7 +9,6 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	printf("n :");
     scanf("%d", &n);
     if (n >= 0)
 
