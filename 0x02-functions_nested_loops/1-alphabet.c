@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 
+void print_alphabet(void);
 int main()
 {
 	int ch;
