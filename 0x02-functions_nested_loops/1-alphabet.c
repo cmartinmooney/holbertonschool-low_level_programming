@@ -1,9 +1,11 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
+#include <"holberton.h">
 
+/**
+ * print_alphabet - prints the alphabet
+ *
+ * Return: void
+ */
 void print_alphabet(void);
-int main()
 {
 	int ch;
 	for(ch = 'a'; ch <= 'z'; ch++)
