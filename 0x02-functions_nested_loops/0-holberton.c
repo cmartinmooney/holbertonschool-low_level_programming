@@ -5,7 +5,7 @@
 int main(void)
 {
 
-putchar('h');
+putchar('H');
 putchar('o');
 putchar('l');
 putchar('b');
