@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * print_sign checks if lowercase
- * *@n: char to check
+ * print_sign - checks for lowercase
+ * @n: number to check
  *
- * Return: 1 if more than 0, 0 if 0, -1 if below 0
+ * Return: 1 if >0, 0 if zero, -1 if <0
  */
 
 int print_sign(int n)
@@ -21,8 +21,7 @@ int print_sign(int n)
 	}
 	else
 	{
-		_putchar('0');
+		_putchar('-');
 		return (-1);
 	}
-
 }
