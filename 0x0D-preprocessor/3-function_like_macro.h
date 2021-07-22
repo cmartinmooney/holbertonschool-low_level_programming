@@ -1,13 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef _ABS_
+#define _ABS_
 
-/**
- * main - program entry
- *
- * Return: 0
- */
-int main(void)
-{
-	printf("%s\n", __FILE__);
-	return (0);
-}
+#define ABS(x) (((x) < 0) ? -(x) : (x))
+
+#endif
