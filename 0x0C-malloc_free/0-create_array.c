@@ -2,32 +2,28 @@
 #include <stdlib.h>
 
 /**
- * _strdup - Returns pointer to copy of string given as param
- * @str: Source string
+ * create_array - Creates an array of chars and inits it
+ *		with a specific char.
+ * @size: size of the array
+ * @c: char to initialize the array with
  *
- * Return: NULL if insufficient memory, ptr to new string otherwise
+ * Return: NULL if size is zero or fail. Ptr to array otherwise
  */
-char *_strdup(char *str)
+char *create_array(unsigned int size, char c)
 {
-	char *new_str;
-	int i;
-	int length = 0;
+	char *arr;
+	unsigned int i;
 
-	if (!str)
+	if (!size)
 		return (NULL);
 
-	for (i = 0; str[i]; i++)
-		length++;
+	arr = malloc(sizeof(char) * size);
 
-	new_str = malloc(sizeof(char) * (length + 1));
-
-	if (!new_str)
+	if (!arr)
 		return (NULL);
 
-	for (i = 0; str[i]; i++)
-		new_str[i] = str[i];
+	for (i = 0; i < size; i++)
+		arr[i] = c;
 
-	new_str[length] = '\0';
-
-	return (new_str);
+	return (arr);
 }
